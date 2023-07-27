@@ -43,7 +43,7 @@ The API follows a RESTful design and is divided into three main parts, each corr
 
 3. **Comment Routes**: Handles operations related to comments. Includes endpoints to create, read, update, and delete comments.
 
-For detailed information about the API endpoints and their request/response formats, please refer to the [API Documentation Postman](https://gist.github.com/username/gistid).
+For detailed information about the API endpoints and their request/response formats, please refer to the [API Documentation Postman](https://documenter.getpostman.com/view/15041975/2s9XxsTvjq).
 
 ## API Routes
 
