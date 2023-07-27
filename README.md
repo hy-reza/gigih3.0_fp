@@ -8,9 +8,30 @@ The database for this API consists of three collections:
 
 1. **Videos**: Each document in the Videos collection has a videoID (unique identifier), and a URL for the video thumbnail.
 
+| Field | Type | Description |
+|-------|------|-------------|
+| videoID | String | The unique identifier of a video |
+| urlImageThumbnail | String | The URL of the video thumbnail |
+
+
 2. **Products**: Each document in the Products collection has a productID (unique identifier), a link to the product, a title, a price, and a videoID (to link the product to a video).
 
+| Field | Type | Description |
+|-------|------|-------------|
+| productID | String | The unique identifier of a product |
+| linkProduct | String | The URL of the product |
+| title | String | The title of the product |
+| price | Number | The price of the product |
+| videoID | String | The identifier of the video the product is associated with |
+
 3. **Comments**: Each document in the Comments collection has a username (of the commenter), the comment text, a videoID (to link the comment to a video), and a timestamp of when the comment was posted.
+
+| Field | Type | Description |
+|-------|------|-------------|
+| username | String | The username of the commenter |
+| comment | String | The text of the comment |
+| videoID | String | The identifier of the video the comment is associated with |
+| timestamp | Date | The date and time when the comment was posted |
 
 ## API Structure
 
