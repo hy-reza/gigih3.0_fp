@@ -70,13 +70,13 @@ For detailed information about the API endpoints and their request/response form
 
 To run the API locally, follow these steps:
 
-1. Clone the repository to your local machine using `git clone https://github.com/username/repo.git`.
+1. Clone the repository to your local machine using `git clone https://github.com/hy-reza/gigih3.0_fp`.
 
 2. Navigate to the project folder and install the necessary dependencies with `npm install`.
 
 3. Make sure you have MongoDB running locally on your machine. If not, you can download and install it from the [official MongoDB website](https://www.mongodb.com/try/download/community).
 
-4. Create a `.env` file in the root of your project and define your `MONGO_URI` (connection string for your MongoDB database) and `PORT` (port where you want the API to run, e.g., 3000).
+4. Create a `.env` file in the root of your project and define your `DB_URL` (connection string for your MongoDB database) and `PORT` (port where you want the API to run, e.g., 3000).
 
 5. Run the API with `npm start`.
 
