@@ -24,6 +24,27 @@ The API follows a RESTful design and is divided into three main parts, each corr
 
 For detailed information about the API endpoints and their request/response formats, please refer to the [API Documentation Gist](https://gist.github.com/username/gistid).
 
+## API Routes
+
+| Endpoint | HTTP Method | Request Body | Success Response | Error Response |
+|----------|-------------|--------------|------------------|----------------|
+| `/api/videos` | GET | - | `200 OK` with array of all videos | `500 Internal Server Error` |
+| `/api/videos/:id` | GET | - | `200 OK` with video object | `500 Internal Server Error` |
+| `/api/videos` | POST | JSON object with `videoID` and `urlImageThumbnail` | `201 Created` with created video object | `500 Internal Server Error` |
+| `/api/videos/:id` | PUT | JSON object with `videoID` and/or `urlImageThumbnail` | `200 OK` with updated video object | `500 Internal Server Error` |
+| `/api/videos/:id` | DELETE | - | `200 OK` with delete message | `500 Internal Server Error` |
+| `/api/products` | GET | - | `200 OK` with array of all products | `500 Internal Server Error` |
+| `/api/products/:id` | GET | - | `200 OK` with product object | `500 Internal Server Error` |
+| `/api/products` | POST | JSON object with `productID`, `linkProduct`, `title`, `price`, and `videoID` | `201 Created` with created product object | `500 Internal Server Error` |
+| `/api/products/:id` | PUT | JSON object with `productID`, `linkProduct`, `title`, `price`, and/or `videoID` | `200 OK` with updated product object | `500 Internal Server Error` |
+| `/api/products/:id` | DELETE | - | `200 OK` with delete message | `500 Internal Server Error` |
+| `/api/comments` | GET | - | `200 OK` with array of all comments | `500 Internal Server Error` |
+| `/api/comments/:id` | GET | - | `200 OK` with comment object | `500 Internal Server Error` |
+| `/api/comments` | POST | JSON object with `username`, `comment`, and `videoID` | `201 Created` with created comment object | `500 Internal Server Error` |
+| `/api/comments/:id` | PUT | JSON object with `username`, `comment`, and/or `videoID` | `200 OK` with updated comment object | `500 Internal Server Error` |
+| `/api/comments/:id` | DELETE | - | `200 OK` with delete message | `500 Internal Server Error` |
+
+
 ## Running Locally
 
 To run the API locally, follow these steps:
